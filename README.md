@@ -2,7 +2,7 @@
 
 ## ℹ️ About
 
-This project was inspired by [json-as-xlsx](https://github.com/LuisEnMarroquin/json-as-xlsx), and aims to make the export of json data to Excel easier, with more *** style*** provided.
+This project was inspired by [json-as-xlsx](https://github.com/LuisEnMarroquin/json-as-xlsx), and aims to make the export of json data to Excel easier, with more <em><b>style</b></em> provided.
 
 The main dependencies is [sheetjs-style](https://github.com/gitbrent/xlsx-js-style) and underlying dependencies for this project is [sheetjs](https://github.com/sheetjs/sheetjs).
 
@@ -137,11 +137,11 @@ yarn add json-excel
 
 * **IJsonSheet**
 
-| Attributes | Describe | Type                     | Required |
-| ---------- | -------- | ------------------------ | -------- |
-| sheetName  |          | `string`                 | `false`  |
-| header     |          | `IHeader[] ` | `boolean` | `false` |
-| data       |          | `IData[]`                | `true`   |
+| Attributes | Type                     | Required |
+| ---------- | ------------------------ | -------- |
+| sheetName  | `string`                 | `false`  |
+| header     | `IHeader[] ` | `boolean` | `false` |
+| data       | `IData[]`                | `true`   |
 
 * **ISettings**
 
@@ -149,7 +149,7 @@ yarn add json-excel
 | ------------ | ------------------------------------------------------------ | ---------------- | -------- |
 | extraLength  | A bigger number means that columns will be wider             | `number`         | `false`  |
 | fileName     | The name of the exported file                                | `string`         | `false`  |
-| writeOptions | Style options from https://github.com/SheetJS/sheetjs#writing-options | `WritingOptions` | `false`  |
+| writeOptions | [Check detail](https://github.com/SheetJS/sheetjs#writing-options) | `WritingOptions` | `false`  |
 
 * **IData**
 
@@ -159,18 +159,18 @@ yarn add json-excel
 
 | Attributes | Sub Attributes | Describe | Type                                           | Required |
 | ---------- | -------------- | -------- | ---------------------------------------------- | -------- |
-| label      | -              |          | `string`                                       | `true`   |
-| value      | -              |          | `string`                                       | `true`   |
-| option     | type           |          | `"text"` | `"hyperlink"`                       | `false`  |
-|            | render         |          | `Hyperlink` | ` ((value: IData) => Hyperlink)` | `false`  |
-|            | style          |          | `CellStyle`                                    | `false`  |
+| label      | -              | Text displayed in the table header | `string`                                       | `true`   |
+| value      | -              | The key of IData | `string` | `((value: IData) => string` | `true`   |
+| option     | type           | Cell type, default  `"text"` | `"text"` | `"hyperlink"` | `false`                  |
+|            | render         | Hyperlink configuration, effective when `type`  is `"hyperlink"` | `Hyperlink` | `` ((value: IData) => Hyperlink)`` | `false` |
+|            | style          | The style of column | `CellStyle`                                    | `false`  |
 
 * **Hyperlink**
 
-| Attributes | Describe | Type     | Required |
-| ---------- | -------- | -------- | -------- |
-| Target     |          | `string` | `ture`   |
-| Tooltip    |          | ``string | `false`  |
+| Attributes | Describe          | Type     | Required |
+| ---------- | ----------------- | -------- | -------- |
+| Target     | Hyperlink address | `string` | `true`   |
+| Tooltip    | Tooltip           | `string` | `false`  |
 
 * **CellStyle**
 

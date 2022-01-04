@@ -6,7 +6,7 @@ import XLSX, { CellObject, CellStyle, WritingOptions } from "xlsx-js-style";
 
 export interface IHeader {
   label: string;
-  value: string | ((value: IData) => string | number | boolean | Date | IData);
+  value: string | ((value: IData) => string);
   option?: {
     type?: "text" | "hyperlink";
     render?: Hyperlink | ((value: IData) => Hyperlink);
