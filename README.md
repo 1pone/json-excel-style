@@ -140,7 +140,7 @@ yarn add json-excel
 | Attributes | Type                     | Required |
 | ---------- | ------------------------ | -------- |
 | sheetName  | `string`                 | `false`  |
-| header     | `IHeader[] ` | `boolean` | `false` |
+| header     | `IHeader[] ` \| `boolean` | `false` |
 | data       | `IData[]`                | `true`   |
 
 * **ISettings**
@@ -160,9 +160,9 @@ yarn add json-excel
 | Attributes | Sub Attributes | Describe | Type                                           | Required |
 | ---------- | -------------- | -------- | ---------------------------------------------- | -------- |
 | label      | -              | Text displayed in the table header | `string`                                       | `true`   |
-| value      | -              | The key of IData | `string` | `((value: IData) => string` | `true`   |
-| option     | type           | Cell type, default  `"text"` | `"text"` | `"hyperlink"` | `false`                  |
-|            | render         | Hyperlink configuration, effective when `type`  is `"hyperlink"` | `Hyperlink` | `` ((value: IData) => Hyperlink)`` | `false` |
+| value      | -              | The key of IData | `string` \| `((value: IData) => string` | `true`   |
+| option     | type           | Cell type, default  `"text"` | `"text"` \| `"hyperlink"` | `false`                  |
+|            | render         | Hyperlink configuration, effective when `type`  is `"hyperlink"` | `Hyperlink` \| `` ((value: IData) => Hyperlink)`` | `false` |
 |            | style          | The style of column | `CellStyle`                                    | `false`  |
 
 * **Hyperlink**
