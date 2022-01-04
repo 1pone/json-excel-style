@@ -1,4 +1,4 @@
-# json-excel
+# json-excel-style
 
 ## ℹ️ About
 
