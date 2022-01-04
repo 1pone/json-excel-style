@@ -1,0 +1,34 @@
+{
+  "name": "json-excel",
+  "version": "1.0.0",
+  "description": "Export json to excel with style!",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1pone/json-excel.git"
+  },
+  "keywords": [
+    "json-to-excel",
+    "json",
+    "excel",
+    "style",
+    "xls",
+    "xlsx",
+    "json2excel"
+  ],
+  "author": "onePone",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/1pone/json-excel/issues"
+  },
+  "homepage": "https://github.com/1pone/json-excel#readme",
+  "dependencies": {
+    "xlsx-js-style": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.6"
+  }
+}
