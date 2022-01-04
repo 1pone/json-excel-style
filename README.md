@@ -13,13 +13,13 @@ All projects are under the Apache 2.0 License.
 npm:
 
 ```sh
-npm install json-excel --save
+npm install json-excel-style --save
 ```
 
 yarn:
 
 ```html
-yarn add json-excel
+yarn add json-excel-style
 ```
 
 ### 🪛 Main function
