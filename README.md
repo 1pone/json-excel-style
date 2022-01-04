@@ -10,13 +10,13 @@ All projects are under the Apache 2.0 License.
 
 ## 🔌 Installation
 
-Install npm:
+npm:
 
 ```sh
 npm install json-excel --save
 ```
 
-Install yarn:
+yarn:
 
 ```html
 yarn add json-excel
@@ -140,7 +140,7 @@ yarn add json-excel
 | Attributes | Type                     | Required |
 | ---------- | ------------------------ | -------- |
 | sheetName  | `string`                 | `false`  |
-| header     | `IHeader[] ` \| `boolean` | `false` |
+| header     | `IHeader[]`  \| `boolean` | `false` |
 | data       | `IData[]`                | `true`   |
 
 * **ISettings**
