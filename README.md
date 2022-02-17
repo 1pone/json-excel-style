@@ -153,16 +153,16 @@ yarn add json-excel-style
 
 * **IData**
 
-`[key: string]` : ` string | number | boolean | Date | IData | any`
+{ `[key: string]` : ` string | number | boolean | Date | IData | any` }
 
 * **IHeader**
 
 | Attributes | Sub Attributes | Describe | Type                                           | Required |
 | ---------- | -------------- | -------- | ---------------------------------------------- | -------- |
 | label      | -              | Text displayed in the table header | `string`                                       | `true`   |
-| value      | -              | The key of IData | `string` \| `((value: IData) => string` | `true`   |
+| value      | -              | The key of IData | `string` \| `((record: IData) => string` | `true`   |
 | option     | type           | Cell type, default  `"text"` | `"text"` \| `"hyperlink"` | `false`                  |
-|            | render         | Hyperlink configuration, effective when `type`  is `"hyperlink"` | `Hyperlink` \| `` ((value: IData) => Hyperlink)`` | `false` |
+|            | render         | Hyperlink configuration, effective when `type`  is `"hyperlink"` | `Hyperlink` \| `` ((record: IData) => Hyperlink)`` | `false` |
 |            | style          | The style of column | `CellStyle`                                    | `false`  |
 
 * **Hyperlink**
